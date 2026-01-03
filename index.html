@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Error Code List — 1998 Style (No CSS)</title>
+</head>
+<body>
+  <center>
+    <h1>ERROR CODE LIST</h1>
+    <p><i>A error code list to test</i></p>
+    <p><b>Quick: if dont know check a tutorial on down our here.</b></p>
+        <p><b>NOTES: this error list code for free to test. thank you :]</b></p>
+  </center>
+
+  <h2>===========================</h2>
+  <h2>== NETWORK CONNECTION ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRCONNECTIONREFUSED]</b><br>
+  IP: <a href="http://127.0.0.1:81" target="_blank">http://127.0.0.1:81</a><br>
+  About: The port is closed; server refuses the connection.<br>
+  Group: Network / Refused</p>
+
+  <p><b>[ERRCONNECTIONRESET]</b><br>
+  IP: <a href="http://10.255.255.1" target="_blank">http://10.255.255.1</a><br>
+  About: Connection was started but then reset by the remote host.<br>
+  Group: Network / Reset</p>
+
+  <p><b>[ERRCONNECTIONCLOSED]</b><br>
+  IP: <a href="http://example.com:81" target="_blank">http://example.com:81</a><br>
+  About: Server accepted connection then closed it immediately.<br>
+  Group: Network / Closed</p>
+
+  <p><b>[ERRCONNECTIONABORTED]</b><br>
+  IP: (Requires custom server)<br>
+  About: Server aborted mid‑transfer; cannot be triggered by simple IP.<br>
+  How to reproduce / learn: run a small test server that accepts then aborts the TCP stream (see Node/Python examples in the tutorials below).</p>
+
+  <p><b>[ERRCONNECTIONFAILED]</b><br>
+  IP: <a href="http://0.0.0.0" target="_blank">http://0.0.0.0</a><br>
+  About: Connection attempt failed instantly.<br>
+  Group: Network / Failed</p>
+
+  <p><b>[ERRCONNECTIONTIMED_OUT]</b><br>
+  IP: <a href="http://0.0.0.93" target="_blank">http://0.0.0.93</a><br>
+  About: Server never responds; long timeout.<br>
+  Group: Network / Timeout</p>
+
+  <p><b>[ERRINTERNETDISCONNECTED]</b><br>
+  IP: (No IP — requires turning off Wi‑Fi)<br>
+  About: Device has no internet connection.<br>
+  How to reproduce / learn: disable network adapter or Wi‑Fi and reload the page; see troubleshooting steps in the connection guides below.</p>
+
+  <p><b>[ERRNETWORKCHANGED]</b><br>
+  IP: (Triggered by switching networks)<br>
+  About: Network changed during request.<br>
+  How to reproduce: switch from Wi‑Fi to mobile data while a request is in progress.</p>
+
+  <h2>===========================</h2>
+  <h2>== DNS / ADDRESS ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRNAMENOT_RESOLVED]</b><br>
+  IP: <a href="http://example.invalid" target="_blank">http://example.invalid</a><br>
+  About: Domain cannot be resolved by DNS.<br>
+  Group: DNS / Resolution</p>
+
+  <p><b>[ERRNAMERESOLUTION_FAILED]</b><br>
+  IP: <a href="http://fake-domain-12345.com" target="_blank">http://fake-domain-12345.com</a><br>
+  About: DNS lookup failed completely.<br>
+  Group: DNS / Resolution</p>
+
+  <p><b>[ERRADDRESSINVALID]</b><br>
+  IP: <a href="http://999.999.999.999" target="_blank">http://999.999.999.999</a><br>
+  About: IP format is impossible; extremely rare.<br>
+  Group: DNS / Invalid Address</p>
+
+  <p><b>[ERRADDRESSUNREACHABLE]</b><br>
+  IP: <a href="http://0.0.0.1" target="_blank">http://0.0.0.1</a><br>
+  About: Address exists but cannot be reached.<br>
+  Group: DNS / Unreachable</p>
+
+  <h2>===========================</h2>
+  <h2>== SSL / HTTPS ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRSSLPROTOCOL_ERROR]</b><br>
+  IP: <a href="https://8.8.8.8" target="_blank">https://8.8.8.8</a><br>
+  About: HTTPS handshake failed; no certificate.<br>
+  Group: SSL / Protocol</p>
+
+  <p><b>[ERRSSLVERSIONORCIPHER_MISMATCH]</b><br>
+  IP: <a href="https://1.0.0.1" target="_blank">https://1.0.0.1</a><br>
+  About: Server uses unsupported TLS version or cipher.<br>
+  Group: SSL / Cipher</p>
+
+  <p><b>[ERRCERTDATE_INVALID]</b><br>
+  IP: <a href="https://expired.badssl.com/" target="_blank">https://expired.badssl.com/</a><br>
+  About: Certificate is expired.<br>
+  Group: SSL / Certificate</p>
+
+  <p><b>[ERRCERTCOMMONNAMEINVALID]</b><br>
+  IP: <a href="https://wrong.host.badssl.com/" target="_blank">https://wrong.host.badssl.com/</a><br>
+  About: Certificate hostname mismatch.<br>
+  Group: SSL / Certificate</p>
+
+  <p><b>[ERRCERTAUTHORITY_INVALID]</b><br>
+  IP: <a href="https://self-signed.badssl.com/" target="_blank">https://self-signed.badssl.com/</a><br>
+  About: Certificate not trusted.<br>
+  Group: SSL / Certificate</p>
+
+  <p><b>[ERRCERTREVOKED]</b><br>
+  IP: <a href="https://revoked.badssl.com/" target="_blank">https://revoked.badssl.com/</a><br>
+  About: Certificate was revoked by CA.<br>
+  Group: SSL / Certificate</p>
+
+  <p><b>[ERRCERTINVALID]</b><br>
+  IP: <a href="https://invalid.badssl.com/" target="_blank">https://invalid.badssl.com/</a><br>
+  About: Certificate is malformed or corrupted.<br>
+  Group: SSL / Certificate</p>
+
+  <h2>===========================</h2>
+  <h2>== HTTP / SERVER ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERREMPTYRESPONSE]</b><br>
+  IP: <a href="http://example.invalid" target="_blank">http://example.invalid</a><br>
+  About: Server sent no data at all.<br>
+  Group: HTTP / Response</p>
+
+  <p><b>[ERRCONTENTLENGTH_MISMATCH]</b><br>
+  IP: (Requires broken server)<br>
+  About: Server claimed a size but sent different data.<br>
+  How to reproduce / learn: run a small test server that sends an incorrect Content-Length header; see the "how to" tutorials below.</p>
+
+  <p><b>[ERRRESPONSEHEADERSTOOBIG]</b><br>
+  IP: (Requires custom server)<br>
+  About: Server sent oversized headers.<br>
+  How to reproduce: craft a server response with very large headers (Node/Python scripts are typical). See the tutorial links below.</p>
+
+  <p><b>[ERRINVALIDCHUNKED_ENCODING]</b><br>
+  IP: (Requires broken chunked server)<br>
+  About: Chunked transfer encoding is malformed.<br>
+  How to reproduce: send malformed chunk sizes from a test server; tutorial links below explain how.</p>
+
+  <p><b>[ERRCONTENTDECODING_FAILED]</b><br>
+  IP: (Requires corrupted gzip)<br>
+  About: Browser failed to decode compressed content.<br>
+  How to reproduce: serve corrupted gzip payloads from a test server; see tutorials below.</p>
+
+  <h2>===========================</h2>
+  <h2>== PROXY ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRPROXYCONNECTION_FAILED]</b><br>
+  IP: <a href="http://10.255.255.1:8080" target="_blank">http://10.255.255.1:8080</a><br>
+  About: Proxy server unreachable.<br>
+  Group: Proxy</p>
+
+  <p><b>[ERRTUNNELCONNECTION_FAILED]</b><br>
+  IP: <a href="https://example.com" target="_blank">https://example.com</a> (with bad proxy)<br>
+  About: HTTPS tunnel through proxy failed.<br>
+  Group: Proxy</p>
+
+  <p><b>[ERRNOSUPPORTED_PROXIES]</b><br>
+  IP: (Proxy misconfiguration)<br>
+  About: No valid proxy available.<br>
+  Group: Proxy</p>
+
+  <h2>===========================</h2>
+  <h2>== BLOCKED ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRBLOCKEDBY_CLIENT]</b><br>
+  IP: Any ad URL<br>
+  About: Blocked by extension (AdBlock, uBlock).<br>
+  Group: Blocked</p>
+
+  <p><b>[ERRBLOCKEDBY_ADMINISTRATOR]</b><br>
+  IP: (Requires parental controls)<br>
+  About: Blocked by system policy.<br>
+  Group: Blocked</p>
+
+  <p><b>[ERRBLOCKEDBY_RESPONSE]</b><br>
+  IP: (Triggered by server)<br>
+  About: Server blocked the request.<br>
+  Group: Blocked</p>
+
+  <h2>===========================</h2>
+  <h2>== CACHE / STORAGE ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRCACHEMISS]</b><br>
+  IP: (Browser cache issue)<br>
+  About: Cache entry missing.<br>
+  Group: Cache</p>
+
+  <p><b>[ERRCACHEREAD_FAILURE]</b><br>
+  IP: (Corrupted cache)<br>
+  About: Browser failed to read cached data.<br>
+  Group: Cache</p>
+
+  <p><b>[ERRCACHEWRITE_FAILURE]</b><br>
+  IP: (Disk full)<br>
+  About: Browser failed to write cache.<br>
+  Group: Cache</p>
+
+  <h2>===========================</h2>
+  <h2>== WEBSOCKET ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRWSPROTOCOL_ERROR]</b><br>
+  IP: <a href="ws://broken-server" target="_blank">ws://broken-server</a><br>
+  About: WebSocket handshake invalid.<br>
+  Group: WebSocket</p>
+
+  <p><b>[ERRWSCONNECTION_FAILED]</b><br>
+  IP: <a href="ws://0.0.0.0" target="_blank">ws://0.0.0.0</a><br>
+  About: WebSocket server unreachable.<br>
+  Group: WebSocket</p>
+
+  <h2>===========================</h2>
+  <h2>== RARE / HIDDEN ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRADDRESSINVALID]</b><br>
+  IP: <a href="http://999.999.999.999" target="_blank">http://999.999.999.999</a><br>
+  About: Chrome rarely shows this; prefers DNS errors.<br>
+  Group: Rare</p>
+
+  <p><b>[ERRCONNECTIONABORTED]</b><br>
+  IP: (Requires custom server)<br>
+  About: Server aborted mid‑stream.<br>
+  Group: Rare</p>
+
+  <p><b>[ERRRESPONSEHEADERSTOOBIG]</b><br>
+  IP: (Requires huge headers)<br>
+  About: Server sent oversized headers.<br>
+  Group: Rare</p>
+
+  <p><b>[ERRINVALIDCHUNKED_ENCODING]</b><br>
+  IP: (Requires malformed chunked data)<br>
+  About: Chunked encoding broken.<br>
+  Group: Rare</p>
+
+  <h2>===========================</h2>
+  <h2>== NOT ERRORS (WORKING IPs)</h2>
+  <h2>===========================</h2>
+
+  <p><b>[WORKING]</b><br>
+  IP: <a href="https://1.1.1.1" target="_blank">https://1.1.1.1</a><br>
+  About: Cloudflare DNS — loads normally.</p>
+
+  <p><b>[WORKING]</b><br>
+  IP: <a href="https://one.one.one.one" target="_blank">https://one.one.one.one</a><br>
+  About: Cloudflare homepage.</p>
+
+  <p><b>[WORKING]</b><br>
+  IP: <a href="https://8.8.8.8" target="_blank">https://8.8.8.8</a><br>
+  About: Google DNS — responds normally.</p>
+
+  <h2>===========================</h2>
+  <h2>== FUN / FICTIONAL "CREEPY" ERRORS</h2>
+  <h2>===========================</h2>
+
+  <p><b>[ERRGHOSTINTHEWIRES]</b><br>
+  About: A reply came from nowhere.</p>
+
+  <p><b>[ERRSHADOWRESPONSE]</b><br>
+  About: Response didn’t match any known server.</p>
+
+  <p><b>[ERRSIGNALFROM_NOWHERE]</b><br>
+  About: Browser detected a signal with no source.</p>
+
+  <p><b>[ERRPORT666_UNAVAILABLE]</b><br>
+  About: The port flickered open, then vanished.</p>
+
+  <p><b>[ERRECHOLOOP_DETECTED]</b><br>
+  About: Request bounced back like something was mimicking you.</p>
+
+  <p><b>[ERRPACKETFROMTHEVOID]</b><br>
+  About: A packet arrived with no origin.</p>
+
+  <p><b>[ERRPHANTOMHOST]</b><br>
+  About: Host appears in routing table but doesn’t exist.</p>
+
+  <h3>Quick clickable links</h3>
+  <ul>
+    <li><a href="http://127.0.0.1:81" target="_blank">http://127.0.0.1:81</a> — ERRCONNECTIONREFUSED</li>
+    <li><a href="http://10.255.255.1" target="_blank">http://10.255.255.1</a> — ERRCONNECTIONRESET</li>
+    <li><a href="http://example.com:81" target="_blank">http://example.com:81</a> — ERRCONNECTIONCLOSED</li>
+    <li><a href="http://0.0.0.0" target="_blank">http://0.0.0.0</a> — ERRCONNECTIONFAILED</li>
+    <li><a href="http://0.0.0.93" target="blank">http://0.0.0.93</a> — ERRCONNECTIONTIMEDOUT</li>
+    <li><a href="http://example.invalid" target="blank">http://example.invalid</a> — ERRNAMENOTRESOLVED / ERREMPTYRESPONSE</li>
+    <li><a href="http://fake-domain-12345.com" target="blank">http://fake-domain-12345.com</a> — ERRNAMERESOLUTIONFAILED</li>
+    <li><a href="http://999.999.999.999" target="_blank">http://999.999.999.999</a> — ERRADDRESSINVALID</li>
+    <li><a href="http://0.0.0.1" target="_blank">http://0.0.0.1</a> — ERRADDRESSUNREACHABLE</li>
+    <li><a href="https://8.8.8.8" target="blank">https://8.8.8.8</a> — ERRSSLPROTOCOLERROR</li>
+    <li><a href="https://1.0.0.1" target="blank">https://1.0.0.1</a> — ERRSSLVERSIONORCIPHERMISMATCH</li>
+    <li><a href="https://expired.badssl.com/" target="blank">https://expired.badssl.com/</a> — ERRCERTDATEINVALID</li>
+    <li><a href="https://wrong.host.badssl.com/" target="_blank">https://wrong.host.badssl.com/</a> — ERRCERTCOMMONNAMEINVALID</li>
+    <li><a href="https://self-signed.badssl.com/" target="blank">https://self-signed.badssl.com/</a> — ERRCERTAUTHORITYINVALID</li>
+    <li><a href="https://revoked.badssl.com/" target="_blank">https://revoked.badssl.com/</a> — ERRCERTREVOKED</li>
+    <li><a href="https://invalid.badssl.com/" target="_blank">https://invalid.badssl.com/</a> — ERRCERTINVALID</li>
+    <li><a href="http://httpstat.us/500" target="blank">http://httpstat.us/500</a> — ERRHTTPRESPONSECODE_FAILURE</li>
+    <li><a href="http://httpstat.us/431" target="_blank">http://httpstat.us/431</a> — ERRRESPONSEHEADERSTOOBIG</li>
+    <li><a href="http://httpstat.us/204" target="blank">http://httpstat.us/204</a> — ERRCONTENTLENGTHMISMATCH (placeholder)</li>
+    <li><a href="http://httpstat.us/200" target="blank">http://httpstat.us/200</a> — ERRCONTENTDECODINGFAILED (placeholder)</li>
+    <li><a href="http://10.255.255.1:8080" target="blank">http://10.255.255.1:8080</a> — ERRPROXYCONNECTIONFAILED</li>
+    <li><a href="http://example.com:3128" target="blank">http://example.com:3128</a> — ERRTUNNELCONNECTIONFAILED (placeholder)</li>
+    <li><a href="about:blank" target="_blank">about:blank</a> — ERRCACHEMISS / cache placeholders</li>
+    <li><a href="ws://0.0.0.0" target="blank">ws://0.0.0.0</a> — ERRWSCONNECTIONFAILED</li>
+    <li><a href="https://1.1.1.1" target="_blank">https://1.1.1.1</a> — WORKING (Cloudflare)</li>
+    <li><a href="https://one.one.one.one" target="_blank">https://one.one.one.one</a> — WORKING (Cloudflare)</li>
+    <li><a href="https://8.8.8.8" target="_blank">https://8.8.8.8</a> — WORKING (Google DNS, may vary)</li>
+    <li><a href="https://9.9.9.9/" target="_blank">https://9.9.9.9/</a> — Quad9: "There is no endpoint configured for this path."</li>
+  </ul>
+
+  <h3>Short tutorials / where to learn (click to open)</h3>
+  <ul>
+    <li><a href="https://www.hostinger.com/tutorials/how-to-fix-err-connection-refused-error" target="_blank">How to reproduce & fix connection refused (Hostinger)</a>. Practical step-by-step checks: site status, router, firewall, DNS, extensions.</li>
+    <li><a href="https://www.hosted.com/articles/how-to-fix-err-connection-refused/" target="_blank">Connection refused troubleshooting (Hosted.com)</a>. Covers visitor and server-side checks and quick fixes.</li>
+    <li><a href="https://kinsta.com/blog/errconnectionrefused/" target="blank">Deep troubleshooting & reproduction ideas (Kinsta)</a>. Includes network checks and server diagnostics; useful for reproducing reset/timeouts and custom server tests.</li>
+    <li><a href="https://www.bluehost.com/blog/err-connection-refused/" target="_blank">Connection error causes & fixes (Bluehost)</a>. Good for stepwise remediation and firewall/antivirus checks.</li>
+    <li><a href="https://sslinsights.com/fix-err-connection-refused-error-in-chrome/" target="_blank">Additional fixes & explanations (SSL Insights)</a>. Extra tips for browser and DNS troubleshooting.</li>
+  </ul>
+
+  <p><small>Note: For the HTTP edge cases (malformed chunking, huge headers, content-length mismatch) you will need to run a small local test server (Node/Python) that deliberately crafts the broken responses; the tutorials above include diagnostic and reproduction guidance for these cases. Some links are placeholders for demonstration — reserved TEST‑NET IPs (192.0.2.x, 198.51.100.x, 203.0.113.x) are safe for documentation/testing.</small></p>
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quick Troubleshooting — ERR_EMPTY_RESPONSE & ERR_ADDRESS_UNREACHABLE</title>
+</head>
+<body>
+  <center>
+    <h1>Quick Troubleshooting</h1>
+    <p><i>Error found</i></p>
+    <p><b>Two reported errors: ERR_EMPTY_RESPONSE (5.9.8.9) and ERR_ADDRESS_UNREACHABLE (1.2.3.4)</b></p>
+  </center>
+
+  <hr>
+
+  <h2>1) ERR_EMPTY_RESPONSE</h2>
+
+  <p><b>Message you saw</b><br>
+  This page isn’t working<br>
+  <a href="http://5.9.8.9/" target="_blank">http://5.9.8.9/</a> didn’t send any data.<br>
+  <b>Browser error:</b> ERR_EMPTY_RESPONSE</p>
+
+  <p><b>What it means</b><br>
+  The browser opened a TCP connection (or attempted to) but the server closed the connection without sending any HTTP response bytes (no headers, no body). The browser reports "empty response".</p>
+
+  <p><b>Common causes</b>
+  <ul>
+    <li>Server process crashed or closed socket immediately after accept.</li>
+    <li>Firewall, proxy, or middlebox dropped or blocked the response.</li>
+    <li>Server listening on the port but not speaking HTTP (raw socket behavior).</li>
+    <li>Network device (NAT, router) interfering with the connection.</li>
+  </ul></p>
+
+  <p><b>Quick checks you can run</b>
+  <ol>
+    <li>Open a terminal/command prompt on your machine.</li>
+    <li>Try a simple TCP check with curl (shows low-level details):<br>
+      <code>curl -v http://5.9.8.9/</code></li>
+    <li>Try ping to see if host responds to ICMP:<br>
+      <code>ping 5.9.8.9</code></li>
+    <li>Run traceroute to see where packets stop:<br>
+      <code>traceroute 5.9.8.9</code> (macOS/Linux) or <code>tracert 5.9.8.9</code> (Windows)</li>
+    <li>Try connecting with telnet to the HTTP port to observe raw behavior:<br>
+      <code>telnet 5.9.8.9 80</code> — if it connects and immediately closes, server sent nothing.</li>
+  </ol></p>
+
+  <p><b>How to reproduce (developer / tester)</b>
+  <ol>
+    <li>Run a tiny server that accepts TCP and closes without writing any HTTP response (Node/Python examples below).</li>
+    <li>Point your browser to that server's IP:port and observe ERR_EMPTY_RESPONSE.</li>
+  </ol></p>
+
+  <p><b>Simple Node example (local reproduction)</b><br>
+  Run this on your machine (Node.js installed):<br>
+  <pre>
+const net = require('net');
+const server = net.createServer((socket) =&gt; {
+  // accept then immediately destroy the socket (no HTTP response)
+  socket.destroy();
+});
+server.listen(8080, '0.0.0.0', () =&gt; {
+  console.log('Listening on 0.0.0.0:8080 (will accept then close)');
+});
+  </pre>
+  Then open <a href="http://127.0.0.1:8080/" target="_blank">http://127.0.0.1:8080/</a> in your browser to see an empty response behavior.</p>
+
+  <p><b>Troubleshooting / fixes</b>
+  <ul>
+    <li>If you control the server: check server logs, ensure the HTTP server process is running and not crashing, verify it writes proper HTTP headers and body.</li>
+    <li>Check reverse proxies (nginx, haproxy) and their logs — misconfiguration can drop responses.</li>
+    <li>Temporarily disable firewall/antivirus or test from another network to rule out local filtering.</li>
+    <li>Test with curl -v to capture handshake and any immediate socket close details.</li>
+  </ul></p>
+
+  <hr>
+
+  <h2>2) ERR_ADDRESS_UNREACHABLE</h2>
+
+  <p><b>Message you saw</b><br>
+  This site can’t be reached<br>
+  <a href="http://1.2.3.4/" target="_blank">http://1.2.3.4/</a> is unreachable.<br>
+  <b>Browser error:</b> ERR_ADDRESS_UNREACHABLE</p>
+
+  <p><b>What it means</b><br>
+  The browser (or OS network stack) determined the destination address cannot be reached from your network. This is different from DNS failure — the IP itself is unreachable (no route, no ARP, or blocked by network devices).</p>
+
+  <p><b>Common causes</b>
+  <ul>
+    <li>Routing problem: no route to that IP from your ISP or local network.</li>
+    <li>Network-level blocking by ISP, corporate firewall, or router ACLs.</li>
+    <li>IP is reserved or not assigned on the public internet (or filtered by upstream provider).</li>
+    <li>Local misconfiguration (wrong gateway, VPN/proxy interfering).</li>
+  </ul></p>
+
+  <p><b>Quick checks you can run</b>
+  <ol>
+    <li>Ping the IP:<br>
+      <code>ping 1.2.3.4</code></li>
+    <li>Traceroute to see where packets stop:<br>
+      <code>traceroute 1.2.3.4</code> or <code>tracert 1.2.3.4</code></li>
+    <li>Check your local route table:<br>
+      <code>ip route</code> (Linux/macOS) or <code>route print</code> (Windows)</li>
+    <li>Try from another network (mobile hotspot) to confirm whether the problem is local to your network or global.</li>
+  </ol></p>
+
+  <p><b>How to reproduce</b>
+  <ol>
+    <li>Block outbound traffic to 1.2.3.4 on your router or firewall and attempt to open the URL — browser will show unreachable.</li>
+    <li>Use a network with no route to that IP (some lab networks) and attempt to connect.</li>
+  </ol></p>
+
+  <p><b>Troubleshooting / fixes</b>
+  <ul>
+    <li>Restart your router and modem; disable VPN/proxy temporarily.</li>
+    <li>Check local firewall/antivirus rules that might block the destination IP.</li>
+    <li>Run traceroute; if packets stop at your ISP, contact your ISP and provide the traceroute output.</li>
+    <li>If you control the destination IP, verify the host is online, has correct routing, and responds to ARP/ICMP/TCP.</li>
+  </ul></p>
+
+  <hr>
+
+  <h2>Useful commands summary</h2>
+  <pre>
+# Check raw HTTP behavior
+curl -v http://5.9.8.9/
+
+# Ping the host
+ping 5.9.8.9
+ping 1.2.3.4
+
+# Traceroute to see where packets stop
+traceroute 5.9.8.9   (macOS / Linux)
+tracert 5.9.8.9      (Windows)
+
+# Raw TCP connect
+telnet 5.9.8.9 80
+
+# Check local routes
+ip route             (Linux / macOS)
+route print          (Windows)
+  </pre>
+
+  <hr>
+
+  <h2>If you want, next steps I can add</h2>
+  <ul>
+    <li>One-click Node/Python scripts for each reproduction case (empty response, malformed chunking, content-length mismatch).</li>
+    <li>Sample traceroute/curl output examples and how to read them.</li>
+    <li>Checklist you can follow when reporting the issue to an ISP or server admin (what to include: traceroute, curl -v, timestamps, network used).</li>
+  </ul>
+
+  <p><small> ○ Last time ○
+  <body></body>
+</html>
+
+<p><b>[ERRCONNECTIONABORTED]</b><br>
+IP: <a href="http://7.9.89.2/" target="_blank">http://7.9.89.2/</a><br>
+About: Server accepted the connection but aborted it mid‑handshake or mid‑transfer.<br>
+Group: Network / Aborted<br>
+Note: This is different from timeout or unreachable — the server (or firewall) force‑closed the connection after accepting it.</p>
+
+
+<p><b>................《 • That may made By: Ipadb609@gmail.com • 》................</b></p>
+- Network.error the error list been down/disable </b></p>
+</b></p>check it <a href="chrome://network-errors/" target="_blank">chrome://network-errors/</a><br>
+</b></p>due reason: Disables </b></p>
+<p> <b> ............................................................................</b></p> 
+But i made that to hope back.
