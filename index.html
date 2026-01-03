@@ -490,6 +490,337 @@ About: Server accepted the connection but aborted it mid‑handshake or mid‑tr
 Group: Network / Aborted<br>
 Note: This is different from timeout or unreachable — the server (or firewall) force‑closed the connection after accepting it.</p>
 
+    <h2> CHECK FOR MORE ERROR CODE </h2>
+
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chrome Error Link Index</title>
+  <style>
+    :root{
+      --bg:#050507; --panel:#0b0b0f; --accent:#ff2d95; --neon:#00e6ff; --text:#e6fffa; --muted:#9aa7a7; --highlight:#ffdf5a;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#07070a);color:var(--text);font-family: "Courier New", monospace}
+    .wrap{max-width:1100px;margin:28px auto;padding:22px}
+    header{border-bottom:4px dashed var(--accent);padding-bottom:14px;margin-bottom:18px}
+    h1{font-size:2rem;color:var(--highlight);text-shadow:0 0 8px var(--accent)}
+    .sub{color:var(--muted);margin-top:6px}
+    .controls{display:flex;gap:12px;align-items:center;margin:18px 0;flex-wrap:wrap}
+    input[type="search"]{flex:1;min-width:220px;padding:10px;border-radius:8px;border:1px solid #222;background:#070708;color:var(--text);outline:none}
+    .btn{background:var(--accent);color:#050505;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    .panel{background:var(--panel);padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.6);overflow:auto}
+    .code{white-space:pre-wrap;font-size:0.95rem;line-height:1.35;color:#9fffcf;padding:10px;border-radius:6px;background:linear-gradient(180deg,#050506,#07070a)}
+    .list a{display:block;padding:6px 8px;border-bottom:1px solid rgba(255,255,255,0.03);color:var(--neon);text-decoration:none}
+    .list a:hover{background:rgba(255,45,149,0.04);color:#fff}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:8px;border-bottom:1px dotted #222;text-align:left;font-size:0.95rem}
+    th{color:var(--highlight);font-weight:800}
+    footer{margin-top:18px;color:var(--muted);font-size:0.9rem;border-top:1px dashed #222;padding-top:12px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Chrome Error Link Index</h1>
+      <p class="sub">Click any entry to open the corresponding <code>chrome://network-error/[number]</code> page in your local Chrome. (These are internal Chrome pages and only work inside your browser.)</p>
+    </header>
+
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search error code or text (e.g., CERT_DATE_INVALID or -201)" oninput="filterList()">
+      <button class="btn" onclick="resetList()">Reset</button>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h2 style="margin-top:0">Error Links</h2>
+        <div id="list" class="list">
+<a href="chrome://network-error/-10">ERR_ACCESS_DENIED (-10)</a>
+<a href="chrome://network-error/-108">ERR_ADDRESS_INVALID (-108)</a>
+<a href="chrome://network-error/-147">ERR_ADDRESS_IN_USE (-147)</a>
+<a href="chrome://network-error/-109">ERR_ADDRESS_UNREACHABLE (-109)</a>
+<a href="chrome://network-error/-503">ERR_ADD_USER_CERT_FAILED (-503)</a>
+<a href="chrome://network-error/-122">ERR_ALPN_NEGOTIATION_FAILED (-122)</a>
+<a href="chrome://network-error/-117">ERR_BAD_SSL_CLIENT_AUTH_CERT (-117)</a>
+<a href="chrome://network-error/-904">ERR_BLOB_DEREFERENCED_WHILE_BUILDING (-904)</a>
+<a href="chrome://network-error/-902">ERR_BLOB_FILE_WRITE_FAILED (-902)</a>
+<a href="chrome://network-error/-900">ERR_BLOB_INVALID_CONSTRUCTION_ARGUMENTS (-900)</a>
+<a href="chrome://network-error/-901">ERR_BLOB_OUT_OF_MEMORY (-901)</a>
+<a href="chrome://network-error/-905">ERR_BLOB_REFERENCED_BLOB_BROKEN (-905)</a>
+<a href="chrome://network-error/-906">ERR_BLOB_REFERENCED_FILE_UNAVAILABLE (-906)</a>
+<a href="chrome://network-error/-903">ERR_BLOB_SOURCE_DIED_IN_TRANSIT (-903)</a>
+<a href="chrome://network-error/-22">ERR_BLOCKED_BY_ADMINISTRATOR (-22)</a>
+<a href="chrome://network-error/-20">ERR_BLOCKED_BY_CLIENT (-20)</a>
+<a href="chrome://network-error/-30">ERR_BLOCKED_BY_CSP (-30)</a>
+<a href="chrome://network-error/-34">ERR_BLOCKED_BY_FINGERPRINTING_PROTECTION (-34)</a>
+<a href="chrome://network-error/-385">ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS (-385)</a>
+<a href="chrome://network-error/-32">ERR_BLOCKED_BY_ORB (-32)</a>
+<a href="chrome://network-error/-27">ERR_BLOCKED_BY_RESPONSE (-27)</a>
+<a href="chrome://network-error/-384">ERR_CACHED_IP_ADDRESS_SPACE_BLOCKED_BY_LOCAL_NETWORK_ACCESS_POLICY (-384)</a>
+<a href="chrome://network-error/-410">ERR_CACHE_AUTH_FAILURE_AFTER_READ (-410)</a>
+<a href="chrome://network-error/-408">ERR_CACHE_CHECKSUM_MISMATCH (-408)</a>
+<a href="chrome://network-error/-407">ERR_CACHE_CHECKSUM_READ_FAILURE (-407)</a>
+<a href="chrome://network-error/-405">ERR_CACHE_CREATE_FAILURE (-405)</a>
+<a href="chrome://network-error/-412">ERR_CACHE_DOOM_FAILURE (-412)</a>
+<a href="chrome://network-error/-411">ERR_CACHE_ENTRY_NOT_SUITABLE (-411)</a>
+<a href="chrome://network-error/-409">ERR_CACHE_LOCK_TIMEOUT (-409)</a>
+<a href="chrome://network-error/-400">ERR_CACHE_MISS (-400)</a>
+<a href="chrome://network-error/-404">ERR_CACHE_OPEN_FAILURE (-404)</a>
+<a href="chrome://network-error/-413">ERR_CACHE_OPEN_OR_CREATE_FAILURE (-413)</a>
+<a href="chrome://network-error/-403">ERR_CACHE_OPERATION_NOT_SUPPORTED (-403)</a>
+<a href="chrome://network-error/-406">ERR_CACHE_RACE (-406)</a>
+<a href="chrome://network-error/-401">ERR_CACHE_READ_FAILURE (-401)</a>
+<a href="chrome://network-error/-402">ERR_CACHE_WRITE_FAILURE (-402)</a>
+<a href="chrome://network-error/-214">ERR_CERTIFICATE_TRANSPARENCY_REQUIRED (-214)</a>
+<a href="chrome://network-error/-202">ERR_CERT_AUTHORITY_INVALID (-202)</a>
+<a href="chrome://network-error/-200">ERR_CERT_COMMON_NAME_INVALID (-200)</a>
+<a href="chrome://network-error/-203">ERR_CERT_CONTAINS_ERRORS (-203)</a>
+<a href="chrome://network-error/-714">ERR_CERT_DATABASE_CHANGED (-714)</a>
+<a href="chrome://network-error/-201">ERR_CERT_DATE_INVALID (-201)</a>
+<a href="chrome://network-error/-220">ERR_CERT_END (-220)</a>
+<a href="chrome://network-error/-207">ERR_CERT_INVALID (-207)</a>
+<a href="chrome://network-error/-217">ERR_CERT_KNOWN_INTERCEPTION_BLOCKED (-217)</a>
+<a href="chrome://network-error/-212">ERR_CERT_NAME_CONSTRAINT_VIOLATION (-212)</a>
+<a href="chrome://network-error/-210">ERR_CERT_NON_UNIQUE_NAME (-210)</a>
+<a href="chrome://network-error/-204">ERR_CERT_NO_REVOCATION_MECHANISM (-204)</a>
+<a href="chrome://network-error/-206">ERR_CERT_REVOKED (-206)</a>
+<a href="chrome://network-error/-219">ERR_CERT_SELF_SIGNED_LOCAL_NETWORK (-219)</a>
+<a href="chrome://network-error/-205">ERR_CERT_UNABLE_TO_CHECK_REVOCATION (-205)</a>
+<a href="chrome://network-error/-213">ERR_CERT_VALIDITY_TOO_LONG (-213)</a>
+<a href="chrome://network-error/-716">ERR_CERT_VERIFIER_CHANGED (-716)</a>
+<a href="chrome://network-error/-211">ERR_CERT_WEAK_KEY (-211)</a>
+<a href="chrome://network-error/-208">ERR_CERT_WEAK_SIGNATURE_ALGORITHM (-208)</a>
+<a href="chrome://network-error/-29">ERR_CLEARTEXT_NOT_PERMITTED (-29)</a>
+<a href="chrome://network-error/-151">ERR_CLIENT_AUTH_CERT_TYPE_UNSUPPORTED (-151)</a>
+<a href="chrome://network-error/-103">ERR_CONNECTION_ABORTED (-103)</a>
+<a href="chrome://network-error/-100">ERR_CONNECTION_CLOSED (-100)</a>
+<a href="chrome://network-error/-104">ERR_CONNECTION_FAILED (-104)</a>
+<a href="chrome://network-error/-102">ERR_CONNECTION_REFUSED (-102)</a>
+<a href="chrome://network-error/-101">ERR_CONNECTION_RESET (-101)</a>
+<a href="chrome://network-error/-118">ERR_CONNECTION_TIMED_OUT (-118)</a>
+<a href="chrome://network-error/-330">ERR_CONTENT_DECODING_FAILED (-330)</a>
+<a href="chrome://network-error/-371">ERR_CONTENT_DECODING_INIT_FAILED (-371)</a>
+<a href="chrome://network-error/-354">ERR_CONTENT_LENGTH_MISMATCH (-354)</a>
+<a href="chrome://network-error/-26">ERR_CONTEXT_SHUT_DOWN (-26)</a>
+<a href="chrome://network-error/-171">ERR_CT_CONSISTENCY_PROOF_PARSING_FAILED (-171)</a>
+<a href="chrome://network-error/-169">ERR_CT_STH_INCOMPLETE (-169)</a>
+<a href="chrome://network-error/-168">ERR_CT_STH_PARSING_FAILED (-168)</a>
+<a href="chrome://network-error/-387">ERR_DICTIONARY_LOAD_FAILED (-387)</a>
+<a href="chrome://network-error/-301">ERR_DISALLOWED_URL_SCHEME (-301)</a>
+<a href="chrome://network-error/-815">ERR_DNS_CACHE_INVALIDATION_IN_PROGRESS (-815)</a>
+<a href="chrome://network-error/-804">ERR_DNS_CACHE_MISS (-804)</a>
+<a href="chrome://network-error/-800">ERR_DNS_MALFORMED_RESPONSE (-800)</a>
+<a href="chrome://network-error/-809">ERR_DNS_NAME_HTTPS_ONLY (-809)</a>
+<a href="chrome://network-error/-811">ERR_DNS_NO_MATCHING_SUPPORTED_ALPN (-811)</a>
+<a href="chrome://network-error/-810">ERR_DNS_REQUEST_CANCELLED (-810)</a>
+<a href="chrome://network-error/-805">ERR_DNS_SEARCH_EMPTY (-805)</a>
+<a href="chrome://network-error/-814">ERR_DNS_SECURE_PROBE_RECORD_INVALID (-814)</a>
+<a href="chrome://network-error/-808">ERR_DNS_SECURE_RESOLVER_HOSTNAME_RESOLUTION_FAILED (-808)</a>
+<a href="chrome://network-error/-802">ERR_DNS_SERVER_FAILED (-802)</a>
+<a href="chrome://network-error/-801">ERR_DNS_SERVER_REQUIRES_TCP (-801)</a>
+<a href="chrome://network-error/-806">ERR_DNS_SORT_ERROR (-806)</a>
+<a href="chrome://network-error/-803">ERR_DNS_TIMED_OUT (-803)</a>
+<a href="chrome://network-error/-178">ERR_EARLY_DATA_REJECTED (-178)</a>
+<a href="chrome://network-error/-184">ERR_ECH_FALLBACK_CERTIFICATE_INVALID (-184)</a>
+<a href="chrome://network-error/-183">ERR_ECH_NOT_NEGOTIATED (-183)</a>
+<a href="chrome://network-error/-324">ERR_EMPTY_RESPONSE (-324)</a>
+<a href="chrome://network-error/-333">ERR_ENCODING_CONVERSION_FAILED (-333)</a>
+<a href="chrome://network-error/-340">ERR_ENCODING_DETECTION_FAILED (-340)</a>
+<a href="chrome://network-error/-2">ERR_FAILED (-2)</a>
+<a href="chrome://network-error/-16">ERR_FILE_EXISTS (-16)</a>
+<a href="chrome://network-error/-6">ERR_FILE_NOT_FOUND (-6)</a>
+<a href="chrome://network-error/-18">ERR_FILE_NO_SPACE (-18)</a>
+<a href="chrome://network-error/-17">ERR_FILE_PATH_TOO_LONG (-17)</a>
+<a href="chrome://network-error/-8">ERR_FILE_TOO_BIG (-8)</a>
+<a href="chrome://network-error/-19">ERR_FILE_VIRUS_INFECTED (-19)</a>
+<a href="chrome://network-error/-119">ERR_HOST_RESOLVER_QUEUE_TOO_LARGE (-119)</a>
+<a href="chrome://network-error/-363">ERR_HTTP2_COMPRESSION_ERROR (-363)</a>
+<a href="chrome://network-error/-361">ERR_HTTP2_FLOW_CONTROL_ERROR (-361)</a>
+<a href="chrome://network-error/-362">ERR_HTTP2_FRAME_SIZE_ERROR (-362)</a>
+<a href="chrome://network-error/-360">ERR_HTTP2_INADEQUATE_TRANSPORT_SECURITY (-360)</a>
+<a href="chrome://network-error/-352">ERR_HTTP2_PING_FAILED (-352)</a>
+<a href="chrome://network-error/-337">ERR_HTTP2_PROTOCOL_ERROR (-337)</a>
+<a href="chrome://network-error/-372">ERR_HTTP2_RST_STREAM_NO_ERROR_RECEIVED (-372)</a>
+<a href="chrome://network-error/-351">ERR_HTTP2_SERVER_REFUSED_STREAM (-351)</a>
+<a href="chrome://network-error/-376">ERR_HTTP2_STREAM_CLOSED (-376)</a>
+<a href="chrome://network-error/-140">ERR_HTTPS_PROXY_TUNNEL_RESPONSE_REDIRECT (-140)</a>
+<a href="chrome://network-error/-365">ERR_HTTP_1_1_REQUIRED (-365)</a>
+<a href="chrome://network-error/-379">ERR_HTTP_RESPONSE_CODE_FAILURE (-379)</a>
+<a href="chrome://network-error/-166">ERR_ICANN_NAME_COLLISION (-166)</a>
+<a href="chrome://network-error/-705">ERR_IMPORT_CA_CERT_FAILED (-705)</a>
+<a href="chrome://network-error/-703">ERR_IMPORT_CA_CERT_NOT_CA (-703)</a>
+<a href="chrome://network-error/-704">ERR_IMPORT_CERT_ALREADY_EXISTS (-704)</a>
+<a href="chrome://network-error/-706">ERR_IMPORT_SERVER_CERT_FAILED (-706)</a>
+<a href="chrome://network-error/-355">ERR_INCOMPLETE_CHUNKED_ENCODING (-355)</a>
+<a href="chrome://network-error/-347">ERR_INCOMPLETE_HTTP2_HEADERS (-347)</a>
+<a href="chrome://network-error/-383">ERR_INCONSISTENT_IP_ADDRESS_SPACE (-383)</a>
+<a href="chrome://network-error/-501">ERR_INSECURE_RESPONSE (-501)</a>
+<a href="chrome://network-error/-12">ERR_INSUFFICIENT_RESOURCES (-12)</a>
+<a href="chrome://network-error/-106">ERR_INTERNET_DISCONNECTED (-106)</a>
+<a href="chrome://network-error/-4">ERR_INVALID_ARGUMENT (-4)</a>
+<a href="chrome://network-error/-338">ERR_INVALID_AUTH_CREDENTIALS (-338)</a>
+<a href="chrome://network-error/-321">ERR_INVALID_CHUNKED_ENCODING (-321)</a>
+<a href="chrome://network-error/-182">ERR_INVALID_ECH_CONFIG_LIST (-182)</a>
+<a href="chrome://network-error/-5">ERR_INVALID_HANDLE (-5)</a>
+<a href="chrome://network-error/-370">ERR_INVALID_HTTP_RESPONSE (-370)</a>
+<a href="chrome://network-error/-303">ERR_INVALID_REDIRECT (-303)</a>
+<a href="chrome://network-error/-320">ERR_INVALID_RESPONSE (-320)</a>
+<a href="chrome://network-error/-504">ERR_INVALID_SIGNED_EXCHANGE (-504)</a>
+<a href="chrome://network-error/-300">ERR_INVALID_URL (-300)</a>
+<a href="chrome://network-error/-505">ERR_INVALID_WEB_BUNDLE (-505)</a>
+<a href="chrome://network-error/-710">ERR_KEY_GENERATION_FAILED (-710)</a>
+<a href="chrome://network-error/-329">ERR_MALFORMED_IDENTITY (-329)</a>
+<a href="chrome://network-error/-131">ERR_MANDATORY_PROXY_CONFIGURATION_FAILED (-131)</a>
+<a href="chrome://network-error/-322">ERR_METHOD_NOT_SUPPORTED (-322)</a>
+<a href="chrome://network-error/-343">ERR_MISCONFIGURED_AUTH_ENVIRONMENT (-343)</a>
+<a href="chrome://network-error/-341">ERR_MISSING_AUTH_CREDENTIALS (-341)</a>
+<a href="chrome://network-error/-142">ERR_MSG_TOO_BIG (-142)</a>
+<a href="chrome://network-error/-105">ERR_NAME_NOT_RESOLVED (-105)</a>
+<a href="chrome://network-error/-137">ERR_NAME_RESOLUTION_FAILED (-137)</a>
+<a href="chrome://network-error/-138">ERR_NETWORK_ACCESS_DENIED (-138)</a>
+<a href="chrome://network-error/-33">ERR_NETWORK_ACCESS_REVOKED (-33)</a>
+<a href="chrome://network-error/-21">ERR_NETWORK_CHANGED (-21)</a>
+<a href="chrome://network-error/-331">ERR_NETWORK_IO_SUSPENDED (-331)</a>
+<a href="chrome://network-error/-11">ERR_NOT_IMPLEMENTED (-11)</a>
+<a href="chrome://network-error/-176">ERR_NO_BUFFER_SPACE (-176)</a>
+<a href="chrome://network-error/-502">ERR_NO_PRIVATE_KEY_FOR_CERT (-502)</a>
+<a href="chrome://network-error/-112">ERR_NO_SSL_VERSIONS_ENABLED (-112)</a>
+<a href="chrome://network-error/-336">ERR_NO_SUPPORTED_PROXIES (-336)</a>
+<a href="chrome://network-error/-13">ERR_OUT_OF_MEMORY (-13)</a>
+<a href="chrome://network-error/-348">ERR_PAC_NOT_IN_DHCP (-348)</a>
+<a href="chrome://network-error/-327">ERR_PAC_SCRIPT_FAILED (-327)</a>
+<a href="chrome://network-error/-367">ERR_PAC_SCRIPT_TERMINATED (-367)</a>
+<a href="chrome://network-error/-701">ERR_PKCS12_IMPORT_BAD_PASSWORD (-701)</a>
+<a href="chrome://network-error/-702">ERR_PKCS12_IMPORT_FAILED (-702)</a>
+<a href="chrome://network-error/-708">ERR_PKCS12_IMPORT_INVALID_FILE (-708)</a>
+<a href="chrome://network-error/-707">ERR_PKCS12_IMPORT_INVALID_MAC (-707)</a>
+<a href="chrome://network-error/-709">ERR_PKCS12_IMPORT_UNSUPPORTED (-709)</a>
+<a href="chrome://network-error/-133">ERR_PRECONNECT_MAX_SOCKET_LIMIT (-133)</a>
+<a href="chrome://network-error/-712">ERR_PRIVATE_KEY_EXPORT_FAILED (-712)</a>
+<a href="chrome://network-error/-127">ERR_PROXY_AUTH_REQUESTED (-127)</a>
+<a href="chrome://network-error/-364">ERR_PROXY_AUTH_REQUESTED_WITH_NO_CONNECTION (-364)</a>
+<a href="chrome://network-error/-115">ERR_PROXY_AUTH_UNSUPPORTED (-115)</a>
+<a href="chrome://network-error/-136">ERR_PROXY_CERTIFICATE_INVALID (-136)</a>
+<a href="chrome://network-error/-130">ERR_PROXY_CONNECTION_FAILED (-130)</a>
+<a href="chrome://network-error/-187">ERR_PROXY_DELEGATE_CANCELED_CONNECT_REQUEST (-187)</a>
+<a href="chrome://network-error/-188">ERR_PROXY_DELEGATE_CANCELED_CONNECT_RESPONSE (-188)</a>
+<a href="chrome://network-error/-366">ERR_PROXY_HTTP_1_1_REQUIRED (-366)</a>
+<a href="chrome://network-error/-368">ERR_PROXY_REQUIRED (-368)</a>
+<a href="chrome://network-error/-186">ERR_PROXY_UNABLE_TO_CONNECT_TO_DESTINATION (-186)</a>
+<a href="chrome://network-error/-380">ERR_QUIC_CERT_ROOT_NOT_KNOWN (-380)</a>
+<a href="chrome://network-error/-381">ERR_QUIC_GOAWAY_REQUEST_CAN_BE_RETRIED (-381)</a>
+<a href="chrome://network-error/-358">ERR_QUIC_HANDSHAKE_FAILED (-358)</a>
+<a href="chrome://network-error/-356">ERR_QUIC_PROTOCOL_ERROR (-356)</a>
+<a href="chrome://network-error/-174">ERR_READ_IF_READY_NOT_IMPLEMENTED (-174)</a>
+<a href="chrome://network-error/-328">ERR_REQUEST_RANGE_NOT_SATISFIABLE (-328)</a>
+<a href="chrome://network-error/-345">ERR_RESPONSE_BODY_TOO_BIG_TO_DRAIN (-345)</a>
+<a href="chrome://network-error/-349">ERR_RESPONSE_HEADERS_MULTIPLE_CONTENT_DISPOSITION (-349)</a>
+<a href="chrome://network-error/-346">ERR_RESPONSE_HEADERS_MULTIPLE_CONTENT_LENGTH (-346)</a>
+<a href="chrome://network-error/-350">ERR_RESPONSE_HEADERS_MULTIPLE_LOCATION (-350)</a>
+<a href="chrome://network-error/-325">ERR_RESPONSE_HEADERS_TOO_BIG (-325)</a>
+<a href="chrome://network-error/-357">ERR_RESPONSE_HEADERS_TRUNCATED (-357)</a>
+<a href="chrome://network-error/-713">ERR_SELF_SIGNED_CERT_GENERATION_FAILED (-713)</a>
+<a href="chrome://network-error/-23">ERR_SOCKET_IS_CONNECTED (-23)</a>
+<a href="chrome://network-error/-15">ERR_SOCKET_NOT_CONNECTED (-15)</a>
+<a href="chrome://network-error/-162">ERR_SOCKET_RECEIVE_BUFFER_SIZE_UNCHANGEABLE (-162)</a>
+<a href="chrome://network-error/-163">ERR_SOCKET_SEND_BUFFER_SIZE_UNCHANGEABLE (-163)</a>
+<a href="chrome://network-error/-160">ERR_SOCKET_SET_RECEIVE_BUFFER_SIZE_ERROR (-160)</a>
+<a href="chrome://network-error/-161">ERR_SOCKET_SET_SEND_BUFFER_SIZE_ERROR (-161)</a>
+<a href="chrome://network-error/-120">ERR_SOCKS_CONNECTION_FAILED (-120)</a>
+<a href="chrome://network-error/-121">ERR_SOCKS_CONNECTION_HOST_UNREACHABLE (-121)</a>
+<a href="chrome://network-error/-149">ERR_SSL_BAD_PEER_PUBLIC_KEY (-149)</a>
+<a href="chrome://network-error/-126">ERR_SSL_BAD_RECORD_MAC_ALERT (-126)</a>
+<a href="chrome://network-error/-164">ERR_SSL_CLIENT_AUTH_CERT_BAD_FORMAT (-164)</a>
+<a href="chrome://network-error/-110">ERR_SSL_CLIENT_AUTH_CERT_NEEDED (-110)</a>
+<a href="chrome://network-error/-135">ERR_SSL_CLIENT_AUTH_CERT_NO_PRIVATE_KEY (-135)</a>
+<a href="chrome://network-error/-177">ERR_SSL_CLIENT_AUTH_NO_COMMON_ALGORITHMS (-177)</a>
+<a href="chrome://network-error/-134">ERR_SSL_CLIENT_AUTH_PRIVATE_KEY_ACCESS_DENIED (-134)</a>
+<a href="chrome://network-error/-141">ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED (-141)</a>
+<a href="chrome://network-error/-125">ERR_SSL_DECOMPRESSION_FAILURE_ALERT (-125)</a>
+<a href="chrome://network-error/-153">ERR_SSL_DECRYPT_ERROR_ALERT (-153)</a>
+<a href="chrome://network-error/-148">ERR_SSL_HANDSHAKE_NOT_COMPLETED (-148)</a>
+<a href="chrome://network-error/-181">ERR_SSL_KEY_USAGE_INCOMPATIBLE (-181)</a>
+<a href="chrome://network-error/-123">ERR_SSL_NO_RENEGOTIATION (-123)</a>
+<a href="chrome://network-error/-172">ERR_SSL_OBSOLETE_CIPHER (-172)</a>
+<a href="chrome://network-error/-150">ERR_SSL_PINNED_KEY_NOT_IN_CERT_CHAIN (-150)</a>
+<a href="chrome://network-error/-107">ERR_SSL_PROTOCOL_ERROR (-107)</a>
+<a href="chrome://network-error/-114">ERR_SSL_RENEGOTIATION_REQUESTED (-114)</a>
+<a href="chrome://network-error/-167">ERR_SSL_SERVER_CERT_BAD_FORMAT (-167)</a>
+<a href="chrome://network-error/-156">ERR_SSL_SERVER_CERT_CHANGED (-156)</a>
+<a href="chrome://network-error/-159">ERR_SSL_UNRECOGNIZED_NAME_ALERT (-159)</a>
+<a href="chrome://network-error/-113">ERR_SSL_VERSION_OR_CIPHER_MISMATCH (-113)</a>
+<a href="chrome://network-error/-332">ERR_SYN_REPLY_NOT_RECEIVED (-332)</a>
+<a href="chrome://network-error/-139">ERR_TEMPORARILY_THROTTLED (-139)</a>
+<a href="chrome://network-error/-7">ERR_TIMED_OUT (-7)</a>
+<a href="chrome://network-error/-180">ERR_TLS13_DOWNGRADE_DETECTED (-180)</a>
+<a href="chrome://network-error/-382">ERR_TOO_MANY_ACCEPT_CH_RESTARTS (-382)</a>
+<a href="chrome://network-error/-310">ERR_TOO_MANY_REDIRECTS (-310)</a>
+<a href="chrome://network-error/-375">ERR_TOO_MANY_RETRIES (-375)</a>
+<a href="chrome://network-error/-506">ERR_TRUST_TOKEN_OPERATION_FAILED (-506)</a>
+<a href="chrome://network-error/-507">ERR_TRUST_TOKEN_OPERATION_SUCCESS_WITHOUT_SENDING_REQUEST (-507)</a>
+<a href="chrome://network-error/-111">ERR_TUNNEL_CONNECTION_FAILED (-111)</a>
+<a href="chrome://network-error/-170">ERR_UNABLE_TO_REUSE_CONNECTION_FOR_PROXY_AUTH (-170)</a>
+<a href="chrome://network-error/-344">ERR_UNDOCUMENTED_SECURITY_LIBRARY_STATUS (-344)</a>
+<a href="chrome://network-error/-9">ERR_UNEXPECTED (-9)</a>
+<a href="chrome://network-error/-388">ERR_UNEXPECTED_CONTENT_DICTIONARY_HEADER (-388)</a>
+<a href="chrome://network-error/-323">ERR_UNEXPECTED_PROXY_AUTH (-323)</a>
+<a href="chrome://network-error/-342">ERR_UNEXPECTED_SECURITY_LIBRARY_STATUS (-342)</a>
+<a href="chrome://network-error/-302">ERR_UNKNOWN_URL_SCHEME (-302)</a>
+<a href="chrome://network-error/-334">ERR_UNRECOGNIZED_FTP_DIRECTORY_LISTING_FORMAT (-334)</a>
+<a href="chrome://network-error/-312">ERR_UNSAFE_PORT (-312)</a>
+<a href="chrome://network-error/-311">ERR_UNSAFE_REDIRECT (-311)</a>
+<a href="chrome://network-error/-339">ERR_UNSUPPORTED_AUTH_SCHEME (-339)</a>
+<a href="chrome://network-error/-14">ERR_UPLOAD_FILE_CHANGED (-14)</a>
+<a href="chrome://network-error/-25">ERR_UPLOAD_STREAM_REWIND_NOT_SUPPORTED (-25)</a>
+<a href="chrome://network-error/-124">ERR_WINSOCK_UNEXPECTED_WRITTEN_BYTES (-124)</a>
+<a href="chrome://network-error/-179">ERR_WRONG_VERSION_ON_EARLY_DATA (-179)</a>
+<a href="chrome://network-error/-145">ERR_WS_PROTOCOL_ERROR (-145)</a>
+<a href="chrome://network-error/-154">ERR_WS_THROTTLE_QUEUE_TOO_LARGE (-154)</a>
+<a href="chrome://network-error/-173">ERR_WS_UPGRADE (-173)</a>
+<a href="chrome://network-error/-386">ERR_ZSTD_WINDOW_SIZE_TOO_BIG (-386)</a>
+<a href="chrome://network-error/0">net::OK (0)</a>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <h2>Quick Tests</h2>
+        <p><strong>Open in Chrome:</strong> click any link above. If Chrome supports that code’s UI, you’ll see the simulated error page.</p>
+        <h3 style="margin-bottom:6px">Examples</h3>
+        <table>
+          <thead><tr><th>Error</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td>ERR_NAME_NOT_RESOLVED</td><td><a href="chrome://network-error/-105">chrome://network-error/-105</a></td></tr>
+            <tr><td>ERR_CONNECTION_REFUSED</td><td><a href="chrome://network-error/-102">chrome://network-error/-102</a></td></tr>
+            <tr><td>ERR_EMPTY_RESPONSE</td><td><a href="chrome://network-error/-324">chrome://network-error/-324</a></td></tr>
+          </tbody>
+        </table>
+        <h3 style="margin-top:12px">Notes</h3>
+        <p style="color:var(--muted)">These links are internal to Chromium-based browsers. They will not open in non-Chrome browsers and will not work when accessed remotely.</p>
+      </aside>
+    </div>
+
+    <footer>
+      <strong>Tip:</strong> Use the search box to filter the list by code or name. To test a code not listed here, add a link to <code>chrome://network-error/[number]</code> and open it in Chrome.
+    </footer>
+  </div>
+
+  <script>
+    const raw = Array.from(document.querySelectorAll('#list a')).map(a => ({text:a.textContent.toLowerCase(), el:a}));
+    function filterList(){
+      const q = document.getElementById('q').value.trim().toLowerCase();
+      raw.forEach(item => {
+        item.el.style.display = (!q || item.text.includes(q)) ? 'block' : 'none';
+      });
+    }
+    function resetList(){ document.getElementById('q').value=''; filterList(); }
+    // initialize
+    filterList();
+  </script>
+</body>
+  </html>
 
 <p><b>................《 • That may made By: Ipadb609@gmail.com • 》................</b></p>
 - Network.error the error list been down/disable </b></p>
